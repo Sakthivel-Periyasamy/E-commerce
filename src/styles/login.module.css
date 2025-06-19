@@ -1,0 +1,25 @@
+.container{
+    height: 100%;
+    width:100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    display: flex;
+    height: 300px;
+    width: 700px;
+    background-color: aliceblue;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.leftbox{
+    border-right: 1px solid;
+}
+.rightbox{
+    border-left: 1px solid;
+
+}

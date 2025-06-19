@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Kavivanar&family=Lavishly+Yours&family=Tangerine:wght@400;700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --blue: #001efeda;
+  --white: #fff8f8;
+  --back: #e9dfc3;
+  --ext: #0000001d;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/view-hawaiian-shirt-with-floral-print-hanger.jpg");
+  background-size: cover;
+  background-position: left;
+}
+.landcont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.land {
+  display: grid;
+  row-gap: 10px;
+  align-items: center;
+  padding: 40px 0;
+  height: 45vh;
+  width: 85vw;
+  border: 1px solid rgba(0, 0, 0, 0.559);
+  margin-top: 18vh;
+  text-align: center;
+  background-color: var(--ext);
+  border-radius: 25px;
+  box-shadow: inset 0px 0 20px black;
+  backdrop-filter: blur(10px);
+}
+h1 {
+  font-size: 5em;
+  color: rgb(0, 4, 255);
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+  -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+}
+.bspan {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.5em;
+  color: rgb(255, 255, 255);
+
+  text-shadow: 3px 3px 10px rgb(255, 0, 187);
+  letter-spacing: 3px;
+}
+.uspan {
+  color: rgb(21, 0, 255);
+  position: relative;
+  display: inline-block;
+}
+.uspan::after {
+  content: "";
+  width: 30px;
+  height: 34px;
+  background-color: yellow;
+  /* transform: translateX(-px); */
+  transform: translateY(16px);
+  position: absolute;
+  top: 36px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.aspan {
+  color: rgb(21, 0, 255);
+  position: relative;
+  display: inline-block;
+  
+}
+.aspan::after {
+  content: "";
+  width: 20px;
+  height: 18px;
+  background-color: yellow;
+  position: absolute;
+  transform: translateY(16px);
+
+  top: 52px;
+  left: 11px;
+  border-radius: 60%;
+  z-index: -1;
+}
+
+.bar {
+  margin-top: 10px;
+  display: inline-flex;
+  min-width: fit-content;
+  height: 200px;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.559);
+  box-sizing: border-box;
+  box-shadow: inset 0px 0 10px black;
+  background-color: rgba(255, 255, 255, 0.259);
+
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  overflow-y: hidden;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  height: 160px;
+  min-width: 180px;
+  padding: 20px;
+  /* background-color: white; */
+  border-radius: 10px;
+}
+
+.card img {
+  height: 160px;
+  box-shadow: 3px 3px 20px rgb(0, 0, 0);
+
+  border-radius: 10px;
+  border: 2px solid;
+  min-width: 180px;
+  z-index: 2;
+}
+/* .card img:hover {
+  transition-duration: 0.5s;
+  width: 200px;
+  height: 180px;
+
+} */
