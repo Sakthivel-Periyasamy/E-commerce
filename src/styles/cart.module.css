@@ -1,8 +1,11 @@
 .container {
   height: 100%;
   width: 100%;
-  background-color: bisque;
-  display: flex;
+ background: linear-gradient(
+    179deg,
+    rgb(0, 229, 255) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -15,7 +18,7 @@
 
   height: 80vh;
   width: 90vw;
-  box-shadow: 7px 6px 10px #00000096;
+  box-shadow: 6px 5px 15px #00000096;
   border-radius: 15px;
   border: 1px solid #00000096;
 }

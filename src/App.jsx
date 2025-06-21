@@ -7,6 +7,8 @@ import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import Footer from "./Footer";
 import Login from "./pages/Login";
+import Mens from "./components/Mens";
+import Kids from "./components/Kids";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <div className="pagecont">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/mens" element={<Mens/>} />
+            <Route path="/kids" element={<Kids/>} />
 
             <Route path="/product" element={<Product />} />
             <Route path="/login" element={<Login />} />
@@ -26,7 +30,7 @@ function App() {
           </Routes>
         </div>
         <div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </BrowserRouter>
     </div>

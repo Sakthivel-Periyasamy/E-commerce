@@ -1,8 +1,11 @@
 .container{
     height: 100%;
     width:100%;
-    background-color: bisque;
-    display: flex;
+ background: linear-gradient(
+    179deg,
+    rgb(0, 229, 255) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );    display: flex;
     justify-content: center;
     align-items: center;
 
