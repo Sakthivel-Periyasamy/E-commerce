@@ -5,14 +5,15 @@ import Item from "./Item";
 const Popular = () => {
   return (
     <div className={styles.popular}>
-      <h1>POPULAR IN MENS</h1>
-      <hr />
+      <h1>POPULAR IN WOMEN</h1>
+      <hr className={styles.popular_hr} />
       <div className={styles.popular_item}>
         {data_product.map((item) => {
           return (
             <Item
-              key={i}
+              key={item.id}
               id={item.id}
+              name={item.name}
               image={item.image}
               new_price={item.new_price}
               old_price={item.old_price}

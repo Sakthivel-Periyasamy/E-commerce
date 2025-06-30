@@ -3,22 +3,35 @@ import styles from "../styles/product.module.css";
 export default function Product() {
   return (
     <div className={styles.container}>
-      <h3 className={styles.jea}>Fashion Garments & Textiles</h3>
-      <div className={styles.land}>
-        <div className={styles.landcont}>
-          <div className={styles.mens}>
-            <Link to="/mens">
-              <img src="src\assets\d3-removebg-preview.png" alt="" />
-              <h2 className={styles.lett}>MENS</h2>
-            </Link>
-          </div>
+      <h2 className={styles.jea}>Chooce Your Comfort !</h2>
 
-          <div className={styles.kids}>
-            <Link to="/kids" >
-              <img src="src\assets\land-boys_2-removebg-preview.png" />
-              <h2 className={styles.lett}>BOYS</h2>
-            </Link>
-          </div>
+      <div className={styles.landcont}>
+        <div>
+          <Link to="/mens">
+            <div className={styles.content_left}>
+              <div className={styles.over} >
+                <img src="src\assets\virat.jpeg" alt="" />
+              </div>
+
+              {/* <div className={styles.lett}>
+                <h2>FORMAL</h2>
+              </div> */}
+            </div>
+          </Link>
+        </div>
+
+        <div>
+          <Link to="/kids">
+            <div className={styles.content_right}>
+              <div className={styles.over} >
+                <img src="src\assets\men_product.jpg" alt="" />
+              </div>
+
+              {/* <div className={styles.lett}>
+                <h2>CASUAL</h2>
+              </div> */}
+            </div>
+          </Link>
         </div>
       </div>
     </div>

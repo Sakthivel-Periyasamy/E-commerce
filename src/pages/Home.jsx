@@ -1,25 +1,18 @@
 import { useState } from "react";
+import Popular from "../components/Popular";
 import { Link } from "react-router-dom";
 import styles from "../styles/home.module.css";
+import Offers from "../components/offers/Offers";
+import NewCollections from "../components/NewCollections/NewCollections";
+import NewsLetter from "../components/NewsLetter/NewsLetter";
 export default function Home() {
-  const imageList = [
-    "img1.jpg",
-    "img2.jpg",
-    "img3.jpg",
-    "img4.jpg",
-    "img5.jpg",
-    "img6.jpg",
-    "img7.jpg",
-    "img8.jpg",
-    "img9.jpg",
-    "img10.jpg",
-  ];
-
   return (
     <>
       <div className={styles.container}>
         <div className={styles.landcont}>
-          <div className={styles.left}></div>
+          <div className={styles.left}>
+            <img src="src\assets\new_hero.png" alt="" />
+          </div>
           <div className={styles.right}>
             <div className={styles.land}>
               <span className={styles.bspan}>
@@ -33,6 +26,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Popular />
+        <Offers />
+
+        <NewCollections />
+        <NewsLetter />
       </div>
     </>
   );

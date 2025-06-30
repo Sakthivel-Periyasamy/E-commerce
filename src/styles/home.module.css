@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Kavivanar&family=Lavishly+Yours&family=Tangerine:wght@400;700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
-:root {
-  --blue: #001efeda;
-  --white: #fff8f8;
-  --back: #e9dfc3;
-  --ext: #0000001d;
-}
 
 .container {
   display: flex;
@@ -12,26 +6,25 @@
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-   background: linear-gradient(
-    179deg,
-    rgb(0, 229, 255) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  /* background-image: url("../assets/view-hawaiian-shirt-with-floral-print-hanger.jpg");
-  background-size: cover;
-  background-position: left; */
+  background: linear-gradient(180deg, #91f0ff 0%, #e1ffea22 60%);
 }
 .landcont {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.left{
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
 }
-.right{
-    width: 40%;
-
+.left img {
+  transform: translateY(-28%);
+  height: 65%;
+}
+.right {
+  width: 40%;
 }
 .land {
   display: grid;
@@ -39,9 +32,8 @@
   align-items: center;
   padding: 40px 0;
   height: 65vh;
-  margin-top: 20vh;
+  margin-top: 15vh;
   text-align: center;
- 
 }
 
 .bspan {
@@ -54,56 +46,17 @@
   text-shadow: 2px 2px 8px rgb(255, 0, 187);
   letter-spacing: 3px;
 }
-.shop_btn button{
+.shop_btn button {
   font-weight: 800;
-  padding:0 15px;
+  padding: 0 15px;
   font-style: normal;
-  border-radius: 20px;
+  border-radius: 35px;
   font-size: 2em;
-  background-color: rgb(23, 23, 91);
-  color: rgb(249, 242, 203);
+  width: 300px;
+  height: 60px;
+  background: #ff4141;
+  /* color: rgb(249, 242, 203); */
+  color: white;
   margin-top: 20px;
   cursor: pointer;
-
-  
-
 }
-
-/* 
-.bar {
-  margin-top: 10px;
-  display: inline-flex;
-  min-width: fit-content;
-  height: 200px;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.559);
-  box-sizing: border-box;
-  box-shadow: inset 0px 0 10px black;
-  background-color: rgba(255, 255, 255, 0.259);
-
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  overflow-y: hidden;
-}
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-  height: 160px;
-  min-width: 180px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.card img {
-  height: 160px;
-  box-shadow: 3px 3px 20px rgb(0, 0, 0);
-
-  border-radius: 10px;
-  border: 2px solid;
-  min-width: 180px;
-  z-index: 2;
-} */
-
